@@ -1,81 +1,37 @@
-# Basic Calculator using Python PyQt
-This app is divided in three main parts as per MCV.
-## 1: Create View: 
-View is basically GUI of an application. In this calc it is grid of numbers and symbols.
+# GUI_calculator_pyQt5
+This is a simple calculator application built using PyQt5 that follows the Model-View-Controller (MVC) architectural pattern.
+# Calculator App with PyQt5
 
-## 2: Create Controller
-It is a class that connects interactions between model and view
+This is a simple calculator application built using PyQt5 that follows the Model-View-Controller (MVC) architectural pattern.
 
-## 3: Create Model
-This is business logic. In this calc it is just calculations of operations such as addition and multiplication.
+## Features
 
-# Steps
-## 1: Install pyqt
+- Basic arithmetic operations: addition, subtraction, multiplication, and division.
+- A clean and user-friendly interface.
+- Stylish color scheme.
 
-## 2: Test installation
-To check installation and basic woking of pyqt follow steps below
-- Create file test.py
+## Getting Started
+
+### Prerequisites
+
+Make sure you have Python and PyQt5 installed on your system. You can install PyQt5 using pip:
+
+```bash
+pip install PyQt5
 ```
-import sys
-
-from PyQt5.QtWidgets import QAplication
-from PyQt5.QtWidgets import QLabel
-from PyQt5.QtWidgets import QWidget
+## Usage
+#### 1. Clone the repository:
+```bash
+git clone https://github.com/mohitmungra/External_Exam.git
+cd GUI_calculator_pyQt5
 ```
-- Go to CMD and run python test.py
-If installtion is working this run will not give any error
-
-- Now add following lines to check how to create GUI in pyqt
-
-This code is going to create GUI but will not retain window(When you run code it will show window and exit)
-```
-app = QApplication(sys.argv)
-
-window = QWidget()
-window.QLabel("This is Test", parent = window)
-window.show()
-```
-- To retain window add following code
-```
-sys.exit(app.exce_())
+#### 2. Run the calculator application:
+```bash
+python controller.py
 ```
 
-- Also, add following code lines to experiment moe
-```
-window.setGeometry(100, 100, 280, 80) # It will set  x, y, w, h of app window
-window.move(600,400) # Move window x from left and y from top
-```
+## Customization
+You can customize the styling and appearance of the calculator by modifying the view.py file. Adjust colors, fonts, and layouts to suit your preferences.
 
-## 3: Create view of application i.e. GUI
-
-- Create class named view.py
-- Import following modules
-```
-from PyQt5.QtWidgets import QMainWindow
-from PyQt5.QtWidgets import QWidget
-from PyQt5.QtWidgets import QGridLayout
-from PyQt5.QtWidgets import QLineEdit
-from PyQt5.QtWidgets import QPushButton
-from PyQt5.QtWidgets import QVBoxLayout
-```
-- Create class GUI with parent set to QMainWindow
-```
-class GUI(QMainWindow):
-```
-- Add Constructor
-...It will initiate main window by calling superclass constuctor and setting basic parametes such as
-..* WindowTitle
-..* Size
-..* generalLayout
-..* LED Display
-..* Buttons
-
-- Define methods
-..* _createDisplayLED
-..* _createButtons
-..* setDisplayText
-..* getDisplayText
-..* clearDisplay
-
-## 4: Create Controller of application
-## 5: Create Model of application
+## Acknowledgments
+PyQt5 documentation: ```https://doc.qt.io/qtforpython/ ```
